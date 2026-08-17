@@ -1,0 +1,37 @@
+{
+  "name": "@munin/ui-core",
+  "version": "0.1.0",
+  "description": "Component contracts and shared logic for Munin UI renderers",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "@munin/core": "^0.1.0"
+  },
+  "peerDependenciesMeta": {
+    "@munin/core": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@munin/core": "link:../munin-core",
+    "typescript": "5.5.4",
+    "vitest": "2.0.5"
+  },
+  "license": "MIT"
+}
