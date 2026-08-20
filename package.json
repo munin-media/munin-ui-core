@@ -1,6 +1,6 @@
 {
   "name": "@munin-media/ui-core",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Component contracts and shared logic for Munin UI renderers",
   "type": "module",
   "main": "dist/index.js",
