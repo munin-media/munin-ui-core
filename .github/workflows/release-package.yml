@@ -29,7 +29,9 @@ jobs:
           owner: munin-media
 
       - name: Install dependencies
-        run: npm install
+        run: |
+          unset NPM_CONFIG_USERCONFIG
+          npm install
         env:
           NODE_AUTH_TOKEN: ${{ steps.app-token.outputs.token }}
 
