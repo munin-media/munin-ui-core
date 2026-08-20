@@ -1,5 +1,5 @@
 /**
- * Shared types for @munin/ui-core component contracts.
+ * Shared types for @munin-media/ui-core component contracts.
  * Platform-agnostic accessibility roles and attributes.
  */
 

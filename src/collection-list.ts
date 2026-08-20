@@ -3,7 +3,7 @@
  * Displays user-organized content groupings.
  */
 
-import type { Collection } from '@munin/core';
+import type { Collection } from '@munin-media/core';
 import type { BaseAccessibility } from './types.js';
 
 // --- Props ---

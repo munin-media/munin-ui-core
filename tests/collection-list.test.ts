@@ -5,7 +5,7 @@ import {
   getCollectionItemAccessibility,
   validateCollectionListProps,
 } from '../src/collection-list.js';
-import type { Collection } from '@munin/core';
+import type { Collection } from '@munin-media/core';
 
 function makeCollection(overrides: Partial<Collection> = {}): Collection {
   return {

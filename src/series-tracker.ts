@@ -3,7 +3,7 @@
  * Displays season/episode grid with progress and expansion logic.
  */
 
-import type { SeriesProgress } from '@munin/core';
+import type { SeriesProgress } from '@munin-media/core';
 import type { BaseAccessibility } from './types.js';
 
 // --- Props ---

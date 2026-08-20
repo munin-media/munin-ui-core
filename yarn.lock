@@ -219,23 +219,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@munin/core@link:../munin-core::locator=%40munin%2Fui-core%40workspace%3A.":
+"@munin-media/core@link:../munin-core::locator=%40munin-media%2Fui-core%40workspace%3A.":
   version: 0.0.0-use.local
-  resolution: "@munin/core@link:../munin-core::locator=%40munin%2Fui-core%40workspace%3A."
+  resolution: "@munin-media/core@link:../munin-core::locator=%40munin-media%2Fui-core%40workspace%3A."
   languageName: node
   linkType: soft
 
-"@munin/ui-core@workspace:.":
+"@munin-media/ui-core@workspace:.":
   version: 0.0.0-use.local
-  resolution: "@munin/ui-core@workspace:."
+  resolution: "@munin-media/ui-core@workspace:."
   dependencies:
-    "@munin/core": "link:../munin-core"
+    "@munin-media/core": "link:../munin-core"
     typescript: "npm:5.5.4"
     vitest: "npm:2.0.5"
   peerDependencies:
-    "@munin/core": ^0.1.0
+    "@munin-media/core": ^1.0.0
   peerDependenciesMeta:
-    "@munin/core":
+    "@munin-media/core":
       optional: true
   languageName: unknown
   linkType: soft

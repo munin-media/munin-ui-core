@@ -3,7 +3,7 @@
  * Displays a single content recommendation with score, tags, and reason.
  */
 
-import type { Recommendation } from '@munin/core';
+import type { Recommendation } from '@munin-media/core';
 import type { BaseAccessibility } from './types.js';
 
 // --- Props ---

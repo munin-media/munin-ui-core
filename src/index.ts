@@ -1,5 +1,5 @@
 /**
- * @munin/ui-core — Component contracts and shared logic.
+ * @munin-media/ui-core — Component contracts and shared logic.
  * Zero runtime dependencies. Pure TypeScript.
  */
 

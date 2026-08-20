@@ -5,7 +5,7 @@ import {
   getSeasonAccessibility,
   validateSeriesTrackerProps,
 } from '../src/series-tracker.js';
-import type { SeriesProgress } from '@munin/core';
+import type { SeriesProgress } from '@munin-media/core';
 
 const mockSeries: SeriesProgress = {
   userId: 'user-1',

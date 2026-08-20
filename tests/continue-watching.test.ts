@@ -5,7 +5,7 @@ import {
   getContinueWatchingItemAccessibility,
   validateContinueWatchingProps,
 } from '../src/continue-watching.js';
-import type { ProgressEntry } from '@munin/core';
+import type { ProgressEntry } from '@munin-media/core';
 
 function makeEntry(overrides: Partial<ProgressEntry> = {}): ProgressEntry {
   return {

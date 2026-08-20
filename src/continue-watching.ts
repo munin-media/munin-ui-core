@@ -3,7 +3,7 @@
  * Displays a list of in-progress items the user can resume.
  */
 
-import type { ProgressEntry } from '@munin/core';
+import type { ProgressEntry } from '@munin-media/core';
 import type { BaseAccessibility } from './types.js';
 
 // --- Props ---

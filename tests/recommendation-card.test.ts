@@ -4,7 +4,7 @@ import {
   getRecommendationCardAccessibility,
   validateRecommendationCardProps,
 } from '../src/recommendation-card.js';
-import type { Recommendation } from '@munin/core';
+import type { Recommendation } from '@munin-media/core';
 
 const mockRecommendation: Recommendation = {
   titleId: 'title-42',
