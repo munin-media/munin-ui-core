@@ -21,10 +21,10 @@ jobs:
           registry-url: https://npm.pkg.github.com
 
       - name: Install dependencies
-        run: yarn install --immutable
+        run: npm install
 
       - name: Build
-        run: yarn build
+        run: npm run build
 
       - name: Publish to GitHub Packages
         run: npm publish --access public
