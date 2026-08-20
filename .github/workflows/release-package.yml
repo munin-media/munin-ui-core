@@ -19,27 +19,17 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
-
-      - name: Generate package read token
-        id: app-token
-        uses: actions/create-github-app-token@v1
-        with:
-          app-id: ${{ secrets.APP_ID }}
-          private-key: ${{ secrets.APP_PRIVATE_KEY }}
-          owner: munin-media
+          registry-url: https://npm.pkg.github.com
 
       - name: Install dependencies
-        run: |
-          echo "@munin-media:registry=https://npm.pkg.github.com" > ~/.npmrc
-          echo "//npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}" >> ~/.npmrc
-          npm install
+        run: npm install
         env:
-          NODE_AUTH_TOKEN: ${{ steps.app-token.outputs.token }}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build
         run: npm run build
 
       - name: Publish to GitHub Packages
-        run: npm publish --access public --registry https://npm.pkg.github.com
+        run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
